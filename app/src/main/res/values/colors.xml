@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#fff</color>
+    <color name="black">#000</color>
+
+    <color name="calDateBgColor">#fff</color>
+    <color name="calDateTextColor">#000</color>
+
+    <color name="calSelectedDateBgColor">#ff0000</color>
+    <color name="calSelectedDateTextColor">#fff</color>
+
+    <color name="calDateInRangeBgColor">#f7c3c3</color>
+    <color name="calDateInRangeTextColor">#000</color>
+</resources>
