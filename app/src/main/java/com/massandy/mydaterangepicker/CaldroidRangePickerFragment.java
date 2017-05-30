@@ -4,6 +4,7 @@ import android.graphics.drawable.ColorDrawable;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.TabHost;
 
@@ -64,7 +65,7 @@ public class CaldroidRangePickerFragment extends AppCompatActivity {
         }
 
         public void selectEndDate(Date date) {
-            if (selectedEndDate != null && !selectedEndDate.equals(date)) {
+            if (selectedEndDate != null && !selectedEndDate.equals(date) && !selectedEndDate.equals(selectedStartDate)) {
                 clearDate(selectedEndDate);
             }
             ColorDrawable dateSelectedBgColor = new ColorDrawable(getResources().getColor(R.color.calSelectedDateBgColor));
@@ -93,6 +94,8 @@ public class CaldroidRangePickerFragment extends AppCompatActivity {
                     start.add(Calendar.DATE, 1);
                 } else if (date.after(selectedEndDate)) {
                     start.setTime(selectedEndDate);
+                    if (selectedStartDate.equals(selectedEndDate))
+                        start.add(Calendar.DATE, 1);
                 }
 
                 end.setTime(date);
