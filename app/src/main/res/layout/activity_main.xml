@@ -31,4 +31,20 @@
         android:layout_height="wrap_content"
         android:text="Go to Calendar With StartDate EndDate" />
 
+    <Button
+        android:id="@+id/my_button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go to Calendar 2" />
+
+    <Button
+        android:id="@+id/my_button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go to Calendar 3" />
+    <Button
+        android:id="@+id/my_button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go to Calendar 4" />
 </LinearLayout>

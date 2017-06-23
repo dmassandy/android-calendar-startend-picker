@@ -39,6 +39,30 @@ public class MainActivity extends AppCompatActivity implements DateRangePickerFr
                 goToDateRangePicker3();
             }
         });
+
+        Button button4 = (Button) findViewById(R.id.my_button4);
+        button4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goToDateRangePicker4();
+            }
+        });
+
+        Button button5 = (Button) findViewById(R.id.my_button5);
+        button5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goToDateRangePicker5();
+            }
+        });
+
+        Button button6 = (Button) findViewById(R.id.my_button6);
+        button6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goToDateRangePicker6();
+            }
+        });
     }
 
     private void goToDateRangePicker1() {
@@ -57,6 +81,21 @@ public class MainActivity extends AppCompatActivity implements DateRangePickerFr
         intent.putExtra("minDate", "30-05-2017");
         intent.putExtra("startDate", "05-06-2017");
         intent.putExtra("endDate", "10-06-2017");
+        startActivity(intent);
+    }
+
+    private void goToDateRangePicker4() {
+        Intent intent = new Intent(this, Sampler.class);
+        startActivity(intent);
+    }
+
+    private void goToDateRangePicker5() {
+        Intent intent = new Intent(this, TimeSquareFragment.class);
+        startActivity(intent);
+    }
+
+    private void goToDateRangePicker6() {
+        Intent intent = new Intent(this, OneCalendarFragment.class);
         startActivity(intent);
     }
 

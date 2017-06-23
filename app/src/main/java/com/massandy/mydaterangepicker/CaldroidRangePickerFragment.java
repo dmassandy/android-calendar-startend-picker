@@ -15,6 +15,7 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
+// lib : https://github.com/roomorama/Caldroid
 public class CaldroidRangePickerFragment extends AppCompatActivity {
     private final String CALDROID_SELECTABLE_START_DATE= "CALDROID_SELECTABLE_START_DATE";
     private final String CALDROID_SELECTABLE_END_DATE= "CALDROID_SELECTABLE_END_DATE";
@@ -42,7 +43,7 @@ public class CaldroidRangePickerFragment extends AppCompatActivity {
             Calendar cal = Calendar.getInstance();
             args.putInt(CaldroidFragment.MONTH, cal.get(Calendar.MONTH) + 1);
             args.putInt(CaldroidFragment.YEAR, cal.get(Calendar.YEAR));
-            args.putBoolean(CaldroidFragment.ENABLE_SWIPE, true);
+            args.putBoolean(CaldroidFragment.ENABLE_SWIPE, false);
             args.putBoolean(CaldroidFragment.SIX_WEEKS_IN_CALENDAR, true);
             caldroidFragment.setArguments(args);
         }

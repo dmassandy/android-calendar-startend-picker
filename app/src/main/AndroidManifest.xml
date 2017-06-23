@@ -17,6 +17,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".CaldroidRangePickerFragment"></activity>
+        <activity android:name=".Sampler"></activity>
+        <activity android:name=".TimeSquareFragment"></activity>
+        <activity android:name=".OneCalendarFragment"></activity>
     </application>
 
 </manifest>
